@@ -6,12 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Root Config</title>
   <meta name="importmap-type" content="systemjs-importmap" />
+  <!-- Estamos cogiendo el importMap del ejemplo y vamos a añadir un mircrofronten nuevo en local-->
   <script type="systemjs-importmap" src="https://storage.googleapis.com/react.microfrontends.app/importmap.json"></script>
   <% if (isLocal) { %>
   <script type="systemjs-importmap">
     {
       "imports": {
         "@react-mf/root-config": "http://localhost:9000/react-mf-root-config.js"
+        "@react-mf/navbar": "http://localhost:9001/react-mf-navbar.js",
+        "@gilj_tutorial/musicians": "http://localhost:9002/gilj_tutorial-musicians.js"
       }
     }
   </script>

@@ -19,4 +19,10 @@ registerApplication(
   isActive.planets
 );
 
+registerApplication(
+  "@gilj_tutorial/musicians",
+  () => System.import("@gilj_tutorial/musicians"),
+  isActive.musicians
+);
+
 start();
